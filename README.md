@@ -1,6 +1,6 @@
 # markdown_excel
 
-## [Link to generated API documentation](https://git.thm.de/SWT-WS2017/MarkdownExcel/raw/BDiKoepge_docs/index.html)
+## [Link to generated API documentation](https://fkoep.github.io/MarkdownExcel/)
 
 ## 1. Usage
 
