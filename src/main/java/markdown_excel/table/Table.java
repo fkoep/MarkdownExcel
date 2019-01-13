@@ -238,11 +238,11 @@ public interface Table {
         return stream(rowCursor(pred)); 
     }
 
-    default public Stream<String> fillRows(Stream<String> values){ 
-        return fill(rowCursor(), values);
+    default public void fillRows(Stream<String> values){ 
+        fill(rowCursor(), values);
     }
-    default public Stream<String> fillRows(BiPredicate<Integer, Integer> pred, Stream<String> values){ 
-        return fill(rowCursor(pred), values);
+    default public void fillRows(BiPredicate<Integer, Integer> pred, Stream<String> values){ 
+        fill(rowCursor(pred), values);
     }
 
     default public Stream<String> streamColumns(){ 
@@ -252,11 +252,11 @@ public interface Table {
         return stream(columnCursor(pred)); 
     }
 
-    default public Stream<String> fillColumns(Stream<String> values){ 
-        return fill(columnCursor(), values);
+    default public void fillColumns(Stream<String> values){ 
+        fill(columnCursor(), values);
     }
-    default public Stream<String> fillColumns(BiPredicate<Integer, Integer> pred, Stream<String> values){ 
-        return fill(columnCursor(pred), values);
+    default public void fillColumns(BiPredicate<Integer, Integer> pred, Stream<String> values){ 
+        fill(columnCursor(pred), values);
     }
 
 }
